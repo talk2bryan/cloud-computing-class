@@ -28,6 +28,11 @@
 # CDT- autotools
 .autotools
 
+# eclipse project file
+.settings/
+.classpath
+.project
+
 # STS (Spring Tool Suite)
 .springBeans
 
