@@ -7,7 +7,7 @@ public class DriverProgram {
 
 	private static void question1() {
 		System.out.println("cloud.assignments.a4 - Running Q1");
-		double k = 30; // strike price
+		double k = 140; // strike price
 		double s = 70; // asset
 		double t = 1; // 1 year, 12 months == 12 steps (N)
 		double r = 0.12; // rate == 12%
