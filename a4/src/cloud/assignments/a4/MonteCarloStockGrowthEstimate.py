@@ -6,6 +6,12 @@ from pyspark import SparkFiles
 
 from operator import add
 
+
+'''
+To run:
+    In pyspark: copy and paste this code
+'''
+
 STRIKE_PRICE = 105  # K
 ASSET_PRICE = 100  # S
 T = 1  # 1 year
