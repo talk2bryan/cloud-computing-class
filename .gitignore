@@ -64,3 +64,10 @@ local.properties
 .settings/
 .loadpath
 .recommenders
+\~/
+src/workload
+src/org
+src
+build
+META-INF/*
+WEB-INF/*
