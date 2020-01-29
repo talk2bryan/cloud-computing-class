@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:c="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+    xmlns:p="http://xmlns.jcp.org/jsf/passthrough">
+    <h:head>
+        <title>Wodi's Cloud Job Form</title>
+    </h:head>
+    <h:body>
+
+        <h:form>
+        	<h3>Submit a job!</h3>
+        	<h:panelGrid columns="3">
+	        	<h:outputLabel for="numJobs">Number of Jobs:</h:outputLabel>
+	        		<h:inputText value="#{job.numJobs}" id="numJobs"></h:inputText>
+	        		<br></br>
+	        		<br></br>
+	        	<h:outputLabel for="bw">Bandwidth:</h:outputLabel>
+	        		<h:inputText value="#{job.bw}" id="bw"></h:inputText>
+	        		<br></br>
+	        		<br></br>
+	        	<h:outputLabel for="vmCount">Number of VMs:</h:outputLabel>
+	        		<h:inputText value="#{job.vmCount}" id="vmCount"></h:inputText>
+	        		<br></br>
+	        		<br></br>
+	        	<h:outputLabel for="mips">MIPS:</h:outputLabel>
+	        		<h:inputText value="#{job.mips}" id="mips"></h:inputText>
+	        		<br></br>
+	        		<br></br>
+
+	            <h:commandButton value="Submit" action="server_response">
+	            	<c:actionListener binding="#{job.submitJobRequest()}" />
+	            </h:commandButton>
+            </h:panelGrid>
+        </h:form>
+    </h:body>
+</html>
